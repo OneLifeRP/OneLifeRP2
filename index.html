@@ -1,34 +1,118 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Willkommen bei OneLifeRP – OneLifeRP</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneLife RP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #2c2c47);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+      animation: slideDown 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff4d4d;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="onelife-logo.jpg" alt="Logo" class="header-logo">
-    
-<nav>
-  <ul>
-    <li><a href="index.html">Startseite</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="infos.html">Infos</a></li>
-    <li><a href="regeln.html">Regeln</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="discord.html">Discord</a></li>
-  </ul>
-</nav>
-
-    <div class="title">
-      <h1>Willkommen bei OneLifeRP</h1>
-    </div>
+    <img src="onelife-logo.jpg" alt="OneLifeRP Logo">
+    <h1>Willkommen bei OneLife RP</h1>
   </header>
-  <section class="content">
-    <p>Dein GTA RP Erlebnis – wähle oben eine Seite!</p>
-  </section>
+
+  <nav>
+    <a href="news.html">News</a>
+    <a href="infos.html">Infos</a>
+    <a href="regeln.html">Regeln</a>
+    <a href="team.html">Team</a>
+    <a href="discord.html">Discord</a>
+  </nav>
+
+  <main>
+    <p>Erlebe ein einzigartiges Roleplay-Erlebnis mit OneLife RP. Tauche ein in eine Welt voller Möglichkeiten, Entscheidungen und Geschichten.</p>
+  </main>
+
   <footer>
-    <p>&copy; 2025 OneLifeRP</p>
+    &copy; 2025 OneLife RP – Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
