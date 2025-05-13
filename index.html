@@ -2,13 +2,80 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OneLife RP – Startseite</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header.hero {
+      height: 100vh;
+      background: url('3551518.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header.hero img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    header.hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px #000;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .feature {
+      flex: 1 1 30%;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #222;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #111;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="hero">
     <img src="onelife-logo.jpg" alt="OneLifeRP Logo">
-    <h1>Willkommen bei OneLife RP</h1>
+    <h1 data-aos="fade-up">Willkommen bei OneLife RP</h1>
   </header>
 
   <nav>
@@ -19,13 +86,40 @@
     <a href="discord.html">Discord</a>
   </nav>
 
-  <main>
-    <p>🌆 Tauche ein in die Welt von OneLife RP – ein realistisches FiveM Roleplay-Erlebnis mit Spannung, Freiheit und tiefen Stories.</p>
-    <p>🚔 Polizeieinsätze, 🚑 Rettungsdienste, 🚗 Tuning & illegale Rennen – alles ist möglich!</p>
-  </main>
+  <section data-aos="fade-up">
+    <h2>Über uns</h2>
+    <p>Wir sind ein moderner GTA RP Server mit Fokus auf Realismus und Community.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature" data-aos="fade-up">
+      <h3>Realistische Jobs</h3>
+      <p>Viele Rollen und Karrierewege für immersive Erlebnisse.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+      <h3>Aktive Community</h3>
+      <p>Spieler und Admins, die zusammen für Qualität sorgen.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <h3>Regelmäßige Updates</h3>
+      <p>Neue Inhalte, Balancing und Events für Langzeitmotivation.</p>
+    </div>
+  </section>
+
+  <section data-aos="zoom-in">
+    <h2>Discord</h2>
+    <p>Tritt jetzt unserem Server bei!</p>
+    <a href="discord.html" style="color:#0ff; font-weight:bold;">Zum Discord</a>
+  </section>
 
   <footer>
-    &copy; 2025 OneLife RP – Dein Leben. Deine Regeln.
+    <p>&copy; 2025 OneLife RP – Alle Rechte vorbehalten</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
+
